@@ -9,7 +9,11 @@ body {
     font-family: var(--primary-font);
     background: var(--background);
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: URL(/assets/wooden-floor.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 95%;
 }
 
 header {
