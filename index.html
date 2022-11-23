@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- title and favicon -->
-        <title>Web App</title>
+        <title>Search Supabase</title>
         <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
         <!-- js -->
@@ -25,37 +25,34 @@
     </head>
 
     <body>
-        <header>
+        <!-- <header>
             <img class="logo" src="assets/html_css_js.png" alt="logo" />
             <h1>Web App</h1>
-        </header>
+        </header> -->
 
         <main>
             <section class="search">
                 <form id="search-form">
-                    <input name="name" placeholder="name" />
-                    <select id="astro-sign-select" name="astroSign">
+                    <input name="name" placeholder="name" id="name-input" />
+                    <select name="astroSign" id="astro-sign-select">
                         <option value="">All astro signs</option>
                     </select>
-                    <button>Search</button>
+                    <!-- stretch goals: -->
+
+                    <select name="animal" id="animal-select">
+                        <option value="">Animal</option>
+                    </select>
+                    <select name="theme" id="theme-select">
+                        <option value="">Theme</option>
+                    </select>
+                    <button id="button">Search</button>
                 </form>
 
                 <p id="notification-display">Count</p>
             </section>
 
             <div class="container">
-                <ul class="list" id="beanie-list">
-                    <li class="beanie-baby">
-                        <ul>
-                            <li><h2>Name</h2></li>
-                            <li>Animal</li>
-                            <li>Astro-sign</li>
-                            <li>Birthday</li>
-                            <li>Release date</li>
-                        </ul>
-                        <img src="./assets/wireframe.png" alt="" />
-                    </li>
-                </ul>
+                <ul class="list" id="beanie-list"></ul>
             </div>
         </main>
     </body>

@@ -41,3 +41,17 @@ export function renderBeanie(beanie) {
     li.append(ul, img);
     return li;
 }
+
+export function renderAnimalOption(animal) {
+    const option = document.createElement('option');
+    option.value = animal;
+    option.textContent = animal;
+    return option;
+}
+
+export function renderThemeOption(theme) {
+    const option = document.createElement('option');
+    option.value = theme;
+    option.textContent = theme;
+    return option;
+}
